@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5DC5646828E4B3D500C12D16 /* AppIcon.appiconset in Resources */ = {isa = PBXBuildFile; fileRef = 5DC5646728E4B3D500C12D16 /* AppIcon.appiconset */; };
 		5DDAE85E28CB4C3F008BC03B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DDAE85D28CB4C3F008BC03B /* AppDelegate.swift */; };
 		5DDAE86028CB4C3F008BC03B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DDAE85F28CB4C3F008BC03B /* SceneDelegate.swift */; };
 		5DDAE86228CB4C3F008BC03B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DDAE86128CB4C3F008BC03B /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5DC5646728E4B3D500C12D16 /* AppIcon.appiconset */ = {isa = PBXFileReference; lastKnownFileType = folder; name = AppIcon.appiconset; path = "../../../../../var/folders/g5/hy_prm350jj48_9tf_shb6240000gn/T/com.goodsnooze.bakery/9E3A0D13-5E64-46A4-B45C-AE53B879044F-1681-000005D513532799/AppIcon.appiconset"; sourceTree = "<group>"; };
 		5DDAE85A28CB4C3F008BC03B /* Notifications.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Notifications.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5DDAE85D28CB4C3F008BC03B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5DDAE85F28CB4C3F008BC03B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -61,6 +63,7 @@
 				5DDAE86128CB4C3F008BC03B /* ViewController.swift */,
 				5DDAE86328CB4C3F008BC03B /* Main.storyboard */,
 				5DDAE86628CB4C42008BC03B /* Assets.xcassets */,
+				5DC5646728E4B3D500C12D16 /* AppIcon.appiconset */,
 				5DDAE86828CB4C42008BC03B /* LaunchScreen.storyboard */,
 				5DDAE86B28CB4C42008BC03B /* Info.plist */,
 			);
@@ -124,6 +127,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5DC5646828E4B3D500C12D16 /* AppIcon.appiconset in Resources */,
 				5DDAE86A28CB4C42008BC03B /* LaunchScreen.storyboard in Resources */,
 				5DDAE86728CB4C42008BC03B /* Assets.xcassets in Resources */,
 				5DDAE86528CB4C3F008BC03B /* Main.storyboard in Resources */,
