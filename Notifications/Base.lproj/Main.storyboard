@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Notifications" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="yjJ-Iz-5g1">
+                                <rect key="frame" x="41.5" y="304" width="331" height="216"/>
+                            </datePicker>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Message" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vW7-Xa-MYU">
+                                <rect key="frame" x="41.5" y="193" width="331" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Title" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZtK-Hu-xzV">
+                                <rect key="frame" x="41.5" y="114" width="331" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KHW-19-euN">
+                                <rect key="frame" x="41.5" y="563" width="331" height="42"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="Schedule"/>
+                                <connections>
+                                    <action selector="scheduleAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZLw-sM-4DJ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="KHW-19-euN" firstAttribute="width" secondItem="yjJ-Iz-5g1" secondAttribute="width" id="3Fy-QF-U4H"/>
+                            <constraint firstItem="ZtK-Hu-xzV" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="70" id="5p0-rc-7g7"/>
+                            <constraint firstItem="yjJ-Iz-5g1" firstAttribute="centerX" secondItem="vW7-Xa-MYU" secondAttribute="centerX" id="Bpr-eN-6g4"/>
+                            <constraint firstItem="vW7-Xa-MYU" firstAttribute="width" secondItem="ZtK-Hu-xzV" secondAttribute="width" id="LMY-kO-65r"/>
+                            <constraint firstItem="ZtK-Hu-xzV" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="REr-n2-HJy"/>
+                            <constraint firstItem="ZtK-Hu-xzV" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.8" id="ag7-tW-IWP"/>
+                            <constraint firstItem="vW7-Xa-MYU" firstAttribute="centerX" secondItem="ZtK-Hu-xzV" secondAttribute="centerX" id="g57-jb-e8p"/>
+                            <constraint firstItem="vW7-Xa-MYU" firstAttribute="top" secondItem="ZtK-Hu-xzV" secondAttribute="bottom" constant="45" id="hlk-LO-Ubb"/>
+                            <constraint firstItem="yjJ-Iz-5g1" firstAttribute="width" secondItem="vW7-Xa-MYU" secondAttribute="width" id="kAz-5h-qH5"/>
+                            <constraint firstItem="yjJ-Iz-5g1" firstAttribute="top" secondItem="vW7-Xa-MYU" secondAttribute="bottom" constant="77" id="n1Z-TG-svq"/>
+                            <constraint firstItem="KHW-19-euN" firstAttribute="top" secondItem="yjJ-Iz-5g1" secondAttribute="bottom" constant="43" id="oi2-8W-XrE"/>
+                            <constraint firstItem="KHW-19-euN" firstAttribute="centerX" secondItem="yjJ-Iz-5g1" secondAttribute="centerX" id="q1E-md-1vz"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="datePickerNotify" destination="yjJ-Iz-5g1" id="YAa-gE-ws4"/>
+                        <outlet property="messageNotify" destination="vW7-Xa-MYU" id="VbJ-rH-iBB"/>
+                        <outlet property="titleNotify" destination="ZtK-Hu-xzV" id="2ZY-yL-Ba6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="132" y="103"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
