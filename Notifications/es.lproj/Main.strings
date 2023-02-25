@@ -1,0 +1,9 @@
+
+/* Class = "UIButton"; normalTitle = "Programar"; ObjectID = "KHW-19-euN"; */
+"KHW-19-euN.normalTitle" = "Programar";
+
+/* Class = "UITextField"; placeholder = "Titulo"; ObjectID = "ZtK-Hu-xzV"; */
+"ZtK-Hu-xzV.placeholder" = "Titulo";
+
+/* Class = "UITextField"; placeholder = "Mensaje"; ObjectID = "vW7-Xa-MYU"; */
+"vW7-Xa-MYU.placeholder" = "Mensaje";

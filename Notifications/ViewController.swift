@@ -22,7 +22,7 @@ class ViewController: UIViewController
         notificationCenter.requestAuthorization(options: [.alert, .sound]) {
             (permissionGranted, error) in
             if (!permissionGranted) {
-                print("Permission Denied")
+                print("Permiso Denegado")
             }
         }
     }
@@ -52,12 +52,12 @@ class ViewController: UIViewController
                         }
                     }
                     
-                    let ac = UIAlertController(title: "Notification Scheduled", message: "At " + formattedDate(date: date), preferredStyle: .alert)
+                    let ac = UIAlertController(title: "Notificacion Programada", message: "At " + formattedDate(date: date), preferredStyle: .alert)
                     ac.addAction(UIAlertAction(title: "OK", style: .default, handler: { (_) in}))
                     self.present(ac, animated: true)
                 } else {
-                    let ac = UIAlertController(title: "Enable Notifications?", message: "To use this you must enable notifications in settings", preferredStyle: .alert)
-                    let goToSettings = UIAlertAction(title: "Settings", style: .default) { (_) in
+                    let ac = UIAlertController(title: "Desea habilitar las notificaciones?", message: "Para utilizar esta app, debe habilitar las notificaciones en la configuración", preferredStyle: .alert)
+                    let goToSettings = UIAlertAction(title: "Configuracion", style: .default) { (_) in
                         guard let settingsURL = URL(string: UIApplication.openSettingsURLString) else {
                             return
                         }
@@ -68,7 +68,7 @@ class ViewController: UIViewController
                         }
                     }
                     ac.addAction(goToSettings)
-                    ac.addAction(UIAlertAction(title: "Cancel", style: .default, handler: { (_) in}))
+                    ac.addAction(UIAlertAction(title: "Cancelar", style: .default, handler: { (_) in}))
                     self.present(ac, animated: true)
                 }
             }
