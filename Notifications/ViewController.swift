@@ -19,6 +19,7 @@ class ViewController: UIViewController
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        overrideUserInterfaceStyle = .light
         notificationCenter.requestAuthorization(options: [.alert, .sound]) {
             (permissionGranted, error) in
             if (!permissionGranted) {
