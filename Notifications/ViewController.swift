@@ -39,6 +39,7 @@ class ViewController: UIViewController
                     let content = UNMutableNotificationContent()
                     content.title = title
                     content.body = message
+                    content.sound = UNNotificationSound.default
                     
                     let dateComp = Calendar.current.dateComponents([.year, .month, .day, .hour, .minute], from: date)
                     
@@ -53,7 +54,7 @@ class ViewController: UIViewController
                         }
                     }
                     
-                    let ac = UIAlertController(title: "Notificacion Programada", message: "At " + formattedDate(date: date), preferredStyle: .alert)
+                    let ac = UIAlertController(title: "Notificacion Programada", message: "el " + formattedDate(date: date), preferredStyle: .alert)
                     ac.addAction(UIAlertAction(title: "OK", style: .default, handler: { (_) in}))
                     self.present(ac, animated: true)
                 } else {
@@ -78,7 +79,7 @@ class ViewController: UIViewController
         func formattedDate(date: Date) -> String
         {
             let formatter = DateFormatter()
-            formatter.dateFormat = "d MMM y HH:mm"
+            formatter.dateFormat = "dd/MM/yyyy 'a las' HH:mm"
             return formatter.string(from: date)
         }
     }
